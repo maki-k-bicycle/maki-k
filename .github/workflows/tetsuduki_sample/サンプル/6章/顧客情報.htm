@@ -1,0 +1,304 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML xmlns="http://www.w3.org/TR/REC-html40" xmlns:o = 
+"urn:schemas-microsoft-com:office:office" xmlns:x = 
+"urn:schemas-microsoft-com:office:excel" xmlns:a = 
+"urn:schemas-microsoft-com:office:access" xmlns:dt = 
+"uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><HEAD><TITLE>顧客情報</TITLE><LINK 
+href="顧客情報.files/filelist.xml" type=text/xml rel=File-List>
+<META content=Access.Application name=ProgId>
+<META name=VBSForEventHandlers VALUE="TRUE">
+<META http-equiv=Content-Type content="text/html; charset=shift_jis">
+<META content=10.00.3420 name=DesignerVersion>
+<META content="HTML 4.0" name=vs_targetSchema>
+<OBJECT id=MSODSC tabIndex=-1 
+classid=CLSID:0002E553-0000-0000-C000-000000000046><PARAM NAME="XMLData" VALUE="<xml xmlns:a=&quot;urn:schemas-microsoft-com:office:access&quot;>&#13;&#10; <a:DataSourceControl>&#13;&#10;  <a:OWCVersion>10.0.0.5605         </a:OWCVersion>&#13;&#10;  <a:ConnectionString>Provider=Microsoft.Jet.OLEDB.4.0;User ID=Admin;Data Source=\\Chichi\共有\個人基本情報管理.mdb;Mode=Share Deny None;Extended Properties=&amp;quot;&amp;quot;;Persist Security Info=False;Jet OLEDB:System database=&amp;quot;&amp;quot;;Jet OLEDB:Registry Path=&amp;quot;&amp;quot;;Jet OLEDB:Database Password=&amp;quot;&amp;quot;;Jet OLEDB:Engine Type=0;Jet OLEDB:Database Locking Mode=1;Jet OLEDB:Global Partial Bulk Ops=2;Jet OLEDB:Global Bulk Transactions=1;Jet OLEDB:New Database Password=&amp;quot;&amp;quot;;Jet OLEDB:Create System Database=False;Jet OLEDB:Encrypt Database=False;Jet OLEDB:Don't Copy Locale on Compact=False;Jet OLEDB:Compact Without Replica Repair=False;Jet OLEDB:SFP=False</a:ConnectionString>&#13;&#10;  <a:MaxRecords>10000</a:MaxRecords>&#13;&#10;  <a:GridX>10</a:GridX>&#13;&#10;  <a:GridY>10</a:GridY>&#13;&#10;  <a:OfflineType>2</a:OfflineType>&#13;&#10;  <a:XMLLocation>0</a:XMLLocation>&#13;&#10;  <a:XMLDataTarget></a:XMLDataTarget>&#13;&#10;  <a:ConnectionFile></a:ConnectionFile>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>qry顧客情報データアクセスNavLabel</a:ElementID>&#13;&#10;   <a:RecordsetLabel>qry顧客情報データアクセス |0/|2;qry顧客情報データアクセス |0-|1/|2</a:RecordsetLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>個人ID</a:ElementID>&#13;&#10;   <a:ControlSource>個人ID</a:ControlSource>&#13;&#10;   <a:ChildLabel>個人IDのラベル</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>姓</a:ElementID>&#13;&#10;   <a:ControlSource>姓</a:ControlSource>&#13;&#10;   <a:ChildLabel>姓のラベル</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>名</a:ElementID>&#13;&#10;   <a:ControlSource>名</a:ControlSource>&#13;&#10;   <a:ChildLabel>名のラベル</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>姓フリガナ</a:ElementID>&#13;&#10;   <a:ControlSource>姓フリガナ</a:ControlSource>&#13;&#10;   <a:ChildLabel>姓フリガナのラベル</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>名前フリガナ</a:ElementID>&#13;&#10;   <a:ControlSource>名前フリガナ</a:ControlSource>&#13;&#10;   <a:ChildLabel>名前フリガナのラベル</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>敬称</a:ElementID>&#13;&#10;   <a:ControlSource>敬称</a:ControlSource>&#13;&#10;   <a:ChildLabel>敬称のラベル</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>郵便番号</a:ElementID>&#13;&#10;   <a:ControlSource>郵便番号</a:ControlSource>&#13;&#10;   <a:ChildLabel>郵便番号のラベル</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>都道府県</a:ElementID>&#13;&#10;   <a:ControlSource>都道府県</a:ControlSource>&#13;&#10;   <a:ChildLabel>都道府県のラベル</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>住所１</a:ElementID>&#13;&#10;   <a:ControlSource>住所１</a:ControlSource>&#13;&#10;   <a:ChildLabel>住所１のラベル</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>住所２</a:ElementID>&#13;&#10;   <a:ControlSource>住所２</a:ControlSource>&#13;&#10;   <a:ChildLabel>住所２のラベル</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>会社名</a:ElementID>&#13;&#10;   <a:ControlSource>会社名</a:ControlSource>&#13;&#10;   <a:ChildLabel>会社名のラベル</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>会社名フリガナ</a:ElementID>&#13;&#10;   <a:ControlSource>会社名フリガナ</a:ControlSource>&#13;&#10;   <a:ChildLabel>会社名フリガナのラベル</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>部署</a:ElementID>&#13;&#10;   <a:ControlSource>部署</a:ControlSource>&#13;&#10;   <a:ChildLabel>部署のラベル</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>役職</a:ElementID>&#13;&#10;   <a:ControlSource>役職</a:ControlSource>&#13;&#10;   <a:ChildLabel>役職のラベル</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>電話</a:ElementID>&#13;&#10;   <a:ControlSource>電話</a:ControlSource>&#13;&#10;   <a:ChildLabel>電話のラベル</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>FAX</a:ElementID>&#13;&#10;   <a:ControlSource>FAX</a:ControlSource>&#13;&#10;   <a:ChildLabel>FAXのラベル</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>携帯電話</a:ElementID>&#13;&#10;   <a:ControlSource>携帯電話</a:ControlSource>&#13;&#10;   <a:ChildLabel>携帯電話のラベル</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>Web</a:ElementID>&#13;&#10;   <a:ControlSource>Web</a:ControlSource>&#13;&#10;   <a:ChildLabel>Webのラベル</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>電子メール</a:ElementID>&#13;&#10;   <a:ControlSource>電子メール</a:ControlSource>&#13;&#10;   <a:ChildLabel>電子メールのラベル</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>誕生日</a:ElementID>&#13;&#10;   <a:ControlSource>誕生日</a:ControlSource>&#13;&#10;   <a:ChildLabel>誕生日のラベル</a:ChildLabel>&#13;&#10;   <a:Format>Short Date</a:Format>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>郵便番号自宅</a:ElementID>&#13;&#10;   <a:ControlSource>郵便番号自宅</a:ControlSource>&#13;&#10;   <a:ChildLabel>郵便番号自宅のラベル</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>都道府県自宅</a:ElementID>&#13;&#10;   <a:ControlSource>都道府県自宅</a:ControlSource>&#13;&#10;   <a:ChildLabel>都道府県自宅のラベル</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>住所１自宅</a:ElementID>&#13;&#10;   <a:ControlSource>住所１自宅</a:ControlSource>&#13;&#10;   <a:ChildLabel>住所１自宅のラベル</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>住所２自宅</a:ElementID>&#13;&#10;   <a:ControlSource>住所２自宅</a:ControlSource>&#13;&#10;   <a:ChildLabel>住所２自宅のラベル</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>自宅電話</a:ElementID>&#13;&#10;   <a:ControlSource>自宅電話</a:ControlSource>&#13;&#10;   <a:ChildLabel>自宅電話のラベル</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>自宅FAX</a:ElementID>&#13;&#10;   <a:ControlSource>自宅FAX</a:ControlSource>&#13;&#10;   <a:ChildLabel>自宅FAXのラベル</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>備考</a:ElementID>&#13;&#10;   <a:ControlSource>備考</a:ControlSource>&#13;&#10;   <a:ChildLabel>備考のラベル</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>挨拶状</a:ElementID>&#13;&#10;   <a:ControlSource>挨拶状</a:ControlSource>&#13;&#10;   <a:ChildLabel>挨拶状のラベル</a:ChildLabel>&#13;&#10;   <a:Format>Yes/No</a:Format>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>一時Check</a:ElementID>&#13;&#10;   <a:ControlSource>一時Check</a:ControlSource>&#13;&#10;   <a:ChildLabel>一時Checkのラベル</a:ChildLabel>&#13;&#10;   <a:Format>Yes/No</a:Format>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>Check</a:ElementID>&#13;&#10;   <a:ControlSource>Check</a:ControlSource>&#13;&#10;   <a:ChildLabel>Checkのラベル</a:ChildLabel>&#13;&#10;   <a:Format>Yes/No</a:Format>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>担当者</a:ElementID>&#13;&#10;   <a:ControlSource>担当者</a:ControlSource>&#13;&#10;   <a:ListRowSource>担当者_ListRowsource</a:ListRowSource>&#13;&#10;   <a:ListBoundField>担当者ID</a:ListBoundField>&#13;&#10;   <a:ListDisplayField>担当者名</a:ListDisplayField>&#13;&#10;   <a:ChildLabel>担当者のラベル</a:ChildLabel>&#13;&#10;   <a:DefaultValue>=0</a:DefaultValue>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>分類</a:ElementID>&#13;&#10;   <a:ControlSource>分類1</a:ControlSource>&#13;&#10;   <a:ListRowSource>tbl分類</a:ListRowSource>&#13;&#10;   <a:ListBoundField>ID</a:ListBoundField>&#13;&#10;   <a:ListDisplayField>分類</a:ListDisplayField>&#13;&#10;   <a:ChildLabel>ドロップダウンリスト0のラベル</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:GroupLevel>&#13;&#10;   <a:RecordSource>qry顧客情報データアクセス</a:RecordSource>&#13;&#10;   <a:DefaultSort></a:DefaultSort>&#13;&#10;   <a:HeaderElementId>ヘッダーqry顧客情報デタアクセス</a:HeaderElementId>&#13;&#10;   <a:FooterElementId></a:FooterElementId>&#13;&#10;   <a:CaptionElementId></a:CaptionElementId>&#13;&#10;   <a:RecordNavigationElementId>ナビゲーションqry顧客情報デタアクセス</a:RecordNavigationElementId>&#13;&#10;   <a:DataPageSize>1</a:DataPageSize>&#13;&#10;   <a:GroupFilterControl></a:GroupFilterControl>&#13;&#10;  </a:GroupLevel>&#13;&#10;  <a:Datamodel a:version=&quot;0816&quot;>&#13;&#10;   <a:SchemaRowsource a:id=&quot;分類_ListRowsource&quot; a:type=&quot;dscCommandText&quot;>&#13;&#10;    <a:CommandText>SELECT [tbl分類].[ID], [tbl分類].[分類] FROM tbl分類 ORDER BY [ID]; </a:CommandText>&#13;&#10;    <a:SchemaField a:id=&quot;ID&quot; a:datatype=&quot;3&quot; a:size=&quot;4&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;分類&quot; a:datatype=&quot;202&quot; a:size=&quot;30&quot;/>&#13;&#10;   </a:SchemaRowsource>&#13;&#10;   <a:SchemaRowsource a:id=&quot;担当者_ListRowsource&quot; a:type=&quot;dscCommandText&quot;>&#13;&#10;    <a:CommandText>SELECT [tbl担当者].[担当者ID], [tbl担当者].[担当者名] FROM tbl担当者 ORDER BY [担当者ID]; </a:CommandText>&#13;&#10;    <a:SchemaField a:id=&quot;担当者ID&quot; a:datatype=&quot;3&quot; a:size=&quot;4&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;担当者名&quot; a:datatype=&quot;202&quot; a:size=&quot;50&quot;/>&#13;&#10;   </a:SchemaRowsource>&#13;&#10;   <a:SchemaRowsource a:id=&quot;tbl分類&quot; a:type=&quot;dscTable&quot;>&#13;&#10;    <a:SchemaField a:id=&quot;ID&quot; a:datatype=&quot;3&quot; a:size=&quot;0&quot; a:iskey=&quot;1&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;分類&quot; a:datatype=&quot;130&quot; a:size=&quot;30&quot;/>&#13;&#10;   </a:SchemaRowsource>&#13;&#10;   <a:SchemaRowsource a:id=&quot;qry顧客情報データアクセス&quot; a:type=&quot;dscProcedure&quot;>&#13;&#10;    <a:SchemaField a:id=&quot;個人ID&quot; a:datatype=&quot;3&quot; a:size=&quot;4&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;分類&quot; a:datatype=&quot;3&quot; a:size=&quot;4&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;姓&quot; a:datatype=&quot;202&quot; a:size=&quot;10&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;名&quot; a:datatype=&quot;202&quot; a:size=&quot;10&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;姓フリガナ&quot; a:datatype=&quot;202&quot; a:size=&quot;10&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;名前フリガナ&quot; a:datatype=&quot;202&quot; a:size=&quot;10&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;敬称&quot; a:datatype=&quot;202&quot; a:size=&quot;5&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;郵便番号&quot; a:datatype=&quot;202&quot; a:size=&quot;10&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;都道府県&quot; a:datatype=&quot;202&quot; a:size=&quot;10&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;住所１&quot; a:datatype=&quot;202&quot; a:size=&quot;50&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;住所２&quot; a:datatype=&quot;202&quot; a:size=&quot;50&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;会社名&quot; a:datatype=&quot;202&quot; a:size=&quot;50&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;会社名フリガナ&quot; a:datatype=&quot;202&quot; a:size=&quot;50&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;部署&quot; a:datatype=&quot;202&quot; a:size=&quot;50&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;役職&quot; a:datatype=&quot;202&quot; a:size=&quot;50&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;電話&quot; a:datatype=&quot;202&quot; a:size=&quot;15&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;FAX&quot; a:datatype=&quot;202&quot; a:size=&quot;15&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;携帯電話&quot; a:datatype=&quot;202&quot; a:size=&quot;15&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;Web&quot; a:datatype=&quot;203&quot; a:size=&quot;536870910&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;電子メール&quot; a:datatype=&quot;203&quot; a:size=&quot;536870910&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;担当者&quot; a:datatype=&quot;3&quot; a:size=&quot;4&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;誕生日&quot; a:datatype=&quot;7&quot; a:size=&quot;8&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;郵便番号自宅&quot; a:datatype=&quot;202&quot; a:size=&quot;10&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;都道府県自宅&quot; a:datatype=&quot;202&quot; a:size=&quot;10&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;住所１自宅&quot; a:datatype=&quot;202&quot; a:size=&quot;50&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;住所２自宅&quot; a:datatype=&quot;202&quot; a:size=&quot;50&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;自宅電話&quot; a:datatype=&quot;202&quot; a:size=&quot;15&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;自宅FAX&quot; a:datatype=&quot;202&quot; a:size=&quot;15&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;備考&quot; a:datatype=&quot;202&quot; a:size=&quot;255&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;outlook&quot; a:datatype=&quot;11&quot; a:size=&quot;2&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;挨拶状&quot; a:datatype=&quot;11&quot; a:size=&quot;2&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;一時Check&quot; a:datatype=&quot;11&quot; a:size=&quot;2&quot;/>&#13;&#10;    <a:SchemaField a:id=&quot;Check&quot; a:datatype=&quot;11&quot; a:size=&quot;2&quot;/>&#13;&#10;   </a:SchemaRowsource>&#13;&#10;   <a:RecordsetDef a:id=&quot;担当者_ListRowsource&quot;>&#13;&#10;    <a:PageField a:id=&quot;担当者ID&quot;/>&#13;&#10;    <a:PageField a:id=&quot;担当者名&quot;/>&#13;&#10;   </a:RecordsetDef>&#13;&#10;   <a:RecordsetDef a:id=&quot;qry顧客情報データアクセス&quot;>&#13;&#10;    <a:PageField a:id=&quot;個人ID&quot;/>&#13;&#10;    <a:PageField a:id=&quot;姓&quot;/>&#13;&#10;    <a:PageField a:id=&quot;名&quot;/>&#13;&#10;    <a:PageField a:id=&quot;姓フリガナ&quot;/>&#13;&#10;    <a:PageField a:id=&quot;名前フリガナ&quot;/>&#13;&#10;    <a:PageField a:id=&quot;敬称&quot;/>&#13;&#10;    <a:PageField a:id=&quot;郵便番号&quot;/>&#13;&#10;    <a:PageField a:id=&quot;都道府県&quot;/>&#13;&#10;    <a:PageField a:id=&quot;住所１&quot;/>&#13;&#10;    <a:PageField a:id=&quot;住所２&quot;/>&#13;&#10;    <a:PageField a:id=&quot;会社名&quot;/>&#13;&#10;    <a:PageField a:id=&quot;会社名フリガナ&quot;/>&#13;&#10;    <a:PageField a:id=&quot;部署&quot;/>&#13;&#10;    <a:PageField a:id=&quot;役職&quot;/>&#13;&#10;    <a:PageField a:id=&quot;電話&quot;/>&#13;&#10;    <a:PageField a:id=&quot;FAX&quot;/>&#13;&#10;    <a:PageField a:id=&quot;携帯電話&quot;/>&#13;&#10;    <a:PageField a:id=&quot;Web&quot;/>&#13;&#10;    <a:PageField a:id=&quot;電子メール&quot;/>&#13;&#10;    <a:PageField a:id=&quot;誕生日&quot;/>&#13;&#10;    <a:PageField a:id=&quot;郵便番号自宅&quot;/>&#13;&#10;    <a:PageField a:id=&quot;都道府県自宅&quot;/>&#13;&#10;    <a:PageField a:id=&quot;住所１自宅&quot;/>&#13;&#10;    <a:PageField a:id=&quot;住所２自宅&quot;/>&#13;&#10;    <a:PageField a:id=&quot;自宅電話&quot;/>&#13;&#10;    <a:PageField a:id=&quot;自宅FAX&quot;/>&#13;&#10;    <a:PageField a:id=&quot;備考&quot;/>&#13;&#10;    <a:PageField a:id=&quot;挨拶状&quot;/>&#13;&#10;    <a:PageField a:id=&quot;一時Check&quot;/>&#13;&#10;    <a:PageField a:id=&quot;Check&quot;/>&#13;&#10;    <a:PageField a:id=&quot;担当者&quot;/>&#13;&#10;    <a:PageField a:id=&quot;分類1&quot; a:source=&quot;分類&quot;/>&#13;&#10;   </a:RecordsetDef>&#13;&#10;   <a:RecordsetDef a:id=&quot;tbl分類&quot;>&#13;&#10;    <a:PageField a:id=&quot;ID&quot;/>&#13;&#10;    <a:PageField a:id=&quot;分類&quot;/>&#13;&#10;   </a:RecordsetDef>&#13;&#10;  </a:Datamodel>&#13;&#10; </a:DataSourceControl>&#13;&#10;</xml>"></OBJECT>
+<META content="MSHTML 6.00.2800.1400" name=GENERATOR>
+<STYLE id=MSODAPDEFAULTS type=text/css>.MSTheme-Label {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 3px; BORDER-TOP: 0px; PADDING-LEFT: 3px; FONT-SIZE: 9pt; OVERFLOW: visible; BORDER-LEFT: 0px; WIDTH: 2.539cm; BORDER-BOTTOM: 0px; FONT-FAMILY: ＭＳ Ｐゴシック; HEIGHT: 0.396cm; TEXT-ALIGN: left
+}
+.MsoTextbox {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-SIZE: 9pt; OVERFLOW: hidden; WIDTH: 2.539cm; FONT-FAMILY: ＭＳ Ｐゴシック; HEIGHT: 0.502cm
+}
+.MsoBoundSpan {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 3px; BORDER-TOP: 0px; PADDING-LEFT: 3px; FONT-SIZE: 9pt; OVERFLOW: hidden; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px; FONT-FAMILY: ＭＳ Ｐゴシック; TEXT-ALIGN: left
+}
+.MsoHyperlinkDisplayText {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 3px; BORDER-TOP: 0px; PADDING-LEFT: 3px; FONT-SIZE: 9pt; OVERFLOW: hidden; BORDER-LEFT: 0px; CURSOR: hand; BORDER-BOTTOM: 0px; FONT-FAMILY: ＭＳ Ｐゴシック; TEXT-ALIGN: left
+}
+.Mso2dSection {
+	LEFT: 0px; BEHAVIOR: url(#DEFAULT#Mso2dSection); OVERFLOW: hidden; POSITION: relative; TOP: 0px; BACKGROUND-COLOR: transparent
+}
+.Mso2dSectionBanner {
+	PADDING-RIGHT: 4px; DISPLAY: none; PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 9pt; LEFT: 0px; BEHAVIOR: url(#DEFAULT#Mso2dSectionBanner); OVERFLOW: visible; PADDING-TOP: 2px; FONT-FAMILY: ＭＳ Ｐゴシック; TOP: 0px; HEIGHT: 0.507cm; BACKGROUND-COLOR: buttonface
+}
+.MsoRectangle {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; OVERFLOW: hidden; BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid
+}
+.MsoTitle {
+	DISPLAY: none; FONT-WEIGHT: normal; COLOR: inactivecaptiontext
+}
+.MsoExpandCollapse {
+	CURSOR: hand
+}
+.MsoNavContainer {
+	BORDER-RIGHT: gainsboro 1px solid; BORDER-TOP: gainsboro 1px solid; Z-INDEX: -1; BORDER-LEFT: gainsboro 1px solid; CURSOR: hand; BORDER-BOTTOM: gainsboro 1px solid; HEIGHT: 25px; BACKGROUND-COLOR: gainsboro
+}
+.MsoNavButton {
+	BORDER-RIGHT: gainsboro 1px solid; BORDER-TOP: gainsboro 1px solid; BORDER-LEFT: gainsboro 1px solid; CURSOR: auto; BORDER-BOTTOM: gainsboro 1px solid; BACKGROUND-REPEAT: no-repeat
+}
+.MsoNavButtonMouseOver {
+	BORDER-RIGHT: highlight 1px solid; BORDER-TOP: highlight 1px solid; BORDER-LEFT: highlight 1px solid; BORDER-BOTTOM: highlight 1px solid; BACKGROUND-COLOR: buttonhighlight
+}
+.MsoNavToggleButtonMouseOver {
+	BORDER-RIGHT: buttonshadow 1px solid; BORDER-TOP: buttonshadow 1px solid; BORDER-LEFT: buttonshadow 1px solid; BORDER-BOTTOM: buttonshadow 1px solid; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: buttonshadow
+}
+.MsoNavButtonMouseDown {
+	BORDER-RIGHT: buttonshadow 1px solid; BORDER-TOP: buttonshadow 1px solid; BORDER-LEFT: buttonshadow 1px solid; CURSOR: hand; BORDER-BOTTOM: buttonshadow 1px solid; BACKGROUND-COLOR: buttonshadow
+}
+.MsoNavRecordsetLabel {
+	BORDER-RIGHT: gainsboro 1px solid; BORDER-TOP: gainsboro 1px solid; PADDING-LEFT: 0px; FONT-SIZE: 9pt; OVERFLOW: hidden; BORDER-LEFT: gainsboro 1px solid; WIDTH: 100%; CURSOR: default; PADDING-TOP: 0px; BORDER-BOTTOM: gainsboro 1px solid; FONT-FAMILY: ＭＳ Ｐゴシック; POSITION: relative
+}
+.MsoRecordSelector {
+	BORDER-RIGHT: buttonshadow 1px solid; BORDER-TOP: buttonshadow 1px solid; OVERFLOW: hidden; BORDER-LEFT: buttonshadow 1px solid; BORDER-BOTTOM: buttonshadow 1px solid; HEIGHT: 100%; BACKGROUND-COLOR: gainsboro
+}
+.MsoRecordSelectorCurrent {
+	BACKGROUND-POSITION: 1px 0px; BACKGROUND-IMAGE: url(owc://GIF/#11240); BACKGROUND-REPEAT: no-repeat
+}
+.MsoRecordSelectorSelectedImage {
+	BACKGROUND-POSITION: 1px 0px; BACKGROUND-IMAGE: url(owc://GIF/#11241); BACKGROUND-REPEAT: no-repeat
+}
+.MsoRecordSelectorSelected {
+	BORDER-RIGHT: buttonshadow 1px solid; BORDER-TOP: buttonshadow 1px solid; LEFT: 0px; OVERFLOW: hidden; BORDER-LEFT: buttonshadow 1px solid; BORDER-BOTTOM: buttonshadow 1px solid; TOP: 0px; HEIGHT: 100%; BACKGROUND-COLOR: buttonshadow
+}
+.MsoRecordSelectorDirtyCurrent {
+	BACKGROUND-POSITION: -1px 0px; BACKGROUND-IMAGE: url(owc://GIF/#11242); BACKGROUND-REPEAT: no-repeat
+}
+.MsoRecordSelectorDirty {
+	BACKGROUND-POSITION: -1px 0px; BACKGROUND-IMAGE: url(owc://GIF/#11245); BACKGROUND-REPEAT: no-repeat
+}
+.MsoRecordSelectorTransparent {
+	LEFT: 0px; OVERFLOW: hidden; TOP: 0px
+}
+HR {
+	COLOR: black
+}
+SELECT {
+	FONT-SIZE: 9pt; FONT-FAMILY: ＭＳ Ｐゴシック
+}
+INPUT {
+	FONT-SIZE: 9pt; FONT-FAMILY: ＭＳ Ｐゴシック
+}
+BODY {
+	FONT-SIZE: 10pt; FONT-FAMILY: ＭＳ Ｐゴシック
+}
+MARQUEE {
+	FONT-SIZE: 9pt; FONT-FAMILY: ＭＳ Ｐゴシック
+}
+LEGEND {
+	FONT-SIZE: 9pt; FONT-FAMILY: ＭＳ Ｐゴシック
+}
+BUTTON {
+	FONT-SIZE: 9pt; FONT-FAMILY: ＭＳ Ｐゴシック
+}
+TEXTAREA {
+	FONT-SIZE: 9pt; FONT-FAMILY: ＭＳ Ｐゴシック
+}
+</STYLE>
+
+<SCRIPT language=Javascript id=MSODSC_Validation>
+validateBrowser();
+
+function validateBrowser() {
+	strVers=navigator.appVersion
+	strName=navigator.appName
+	strPlat=navigator.platform
+	intIndex1=strVers.indexOf("MSIE");
+	intIndex1=intIndex1+5
+	intIndex2=strVers.lastIndexOf(";");
+	intVer=strVers.substring(intIndex1, intIndex2)
+	intVer=parseInt(intVer)
+	if (strName=="Microsoft Internet Explorer" && strPlat=="Win32" && intVer>="5") {
+	validateOWC();
+	}
+	else {
+		strMsgGetIE="<TABLE cellSpacing=0 cellPadding=0 width='95%' border=0 height='8'><TR>"
+		strMsgGetIE+="<TD bgColor='#336699' height=25 width=15>&nbsp;</TD><TD bgColor='#666666' width=500px><FONT face=Tahoma "
+		strMsgGetIE+="size=4 color=white><b>&nbsp;データ アクセス ページ通知</B></FONT></TD></TR>"
+		strMsgGetIE+="<TR><TD bgColor='#cccccc' width=15>&nbsp;</TD><TD bgColor='#cccccc' width=500px><BR>"
+		strMsgGetIE+="<p><font face='Tahoma' size='2'>"
+		strMsgGetIE+="このページを利用するには、Windows IE 5.0 以降が必要です。</p>"
+		strMsgGetIE+="<a href='http://www.microsoft.com/isapi/redir.dll?Prd=Office&Sbp=Access&Pver=10&Ar=DPdesigner&Sba=IEhome&Plcid=1041'><p align='center'>"
+		strMsgGetIE+="最新版の Internet Explorer をインストールするには、ここをクリックします。</a></font></p><br></TD></TR></TABLE>"
+		document.write(strMsgGetIE)
+	}
+}
+
+function validateOWC() {
+	if (MSODSC.object==null) {
+		strMsgGetOWC="<TABLE width='95%' cellpadding=0 cellspacing=0 border=0 height='8'>"
+		strMsgGetOWC+="<TR><TD bgColor='#336699' height=25 width=15>&nbsp;</TD><TD bgColor='#666666' width=500px>"
+		strMsgGetOWC+="<FONT face=Tahoma color=white size=4><B>&nbsp;&nbsp;"
+		strMsgGetOWC+="データ アクセス ページ通知</B></FONT></TD></TR><TR><TD bgColor='#cccccc' width=15>&nbsp;</TD>"
+		strMsgGetOWC+="<TD bgColor='#cccccc' width='500px'><BR>"
+		strMsgGetOWC+="<p><font face='Tahoma' size='2'>このページを利用するには、Microsoft Office Web コンポーネントが必要です。</p>"
+		strMsgGetOWC+="</font><p><font face='Tahoma' size='2'>詳細については、<a HRef='http://r.office.microsoft.com/r/rlidmsowcpub?clid=1041&p1=Microsoft Access&HelpLCID=1041'>Microsoft Office Web サイト</a>をご覧ください。 "
+		strMsgGetOWC+="</font></p><BR></TD></TR></TABLE>"
+		document.write(strMsgGetOWC)
+	}
+}
+
+</SCRIPT>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>chichi</o:Author>
+  <o:LastAuthor>chichi</o:LastAuthor>
+  <o:Revision>19</o:Revision>
+  <o:TotalTime>30</o:TotalTime>
+  <o:Created>2004-04-21T07:27:44Z</o:Created>
+  <o:LastSaved>2004-05-25T04:01:27Z</o:LastSaved>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:DownloadComponents/>
+  <o:LocationOfComponents HRef="file:///Q:\"/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--></HEAD>
+<BODY style="OVERFLOW: auto; BACKGROUND-COLOR: #f0f0ff" vLink=#800080 
+link=#0000ff>
+<CENTER>
+<H1 class="" id=ヘッダーテキスト>顧客情報</H1></CENTER>
+<P>&nbsp;</P>
+<DIV class=Mso2dSectionBanner id=ヘッダーqry顧客情報デタアクセスBanner 
+style="MARGIN-LEFT: 0px; WIDTH: 17.488cm" tabIndex=-1><SPAN 
+id=ヘッダーqry顧客情報デタアクセスBannerCaption>ヘッダー: qry顧客情報データアクセス</SPAN></DIV>
+<DIV class=Mso2dSection id=ヘッダーqry顧客情報デタアクセス 
+style="VISIBILITY: inherit; MARGIN-LEFT: 0px; WIDTH: 17.488cm; HEIGHT: 10.399cm"><SPAN 
+class=MSTheme-Label id=個人IDのラベル 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 0.053cm; HEIGHT: 0.424cm">個人ID:</SPAN><TEXTAREA class=MsoTextbox id=個人ID style="LEFT: 2.804cm; WIDTH: 72px; POSITION: absolute; TOP: 0.053cm; HEIGHT: 16px" tabIndex=15 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=姓のラベル 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 1.085cm; HEIGHT: 0.424cm">姓:</SPAN><TEXTAREA class=MsoTextbox id=姓 style="LEFT: 2.804cm; WIDTH: 106px; POSITION: absolute; TOP: 1.085cm; HEIGHT: 16px" tabIndex=17 cols=25 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=名のラベル 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 1.562cm; HEIGHT: 0.424cm">名:</SPAN><TEXTAREA class=MsoTextbox id=名 style="LEFT: 2.804cm; WIDTH: 106px; POSITION: absolute; TOP: 1.562cm; HEIGHT: 16px" tabIndex=18 rows=1 cols=25 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=姓フリガナのラベル 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 2.037cm; HEIGHT: 0.424cm">姓フリガナ:</SPAN><TEXTAREA class=MsoTextbox id=姓フリガナ style="LEFT: 2.804cm; WIDTH: 106px; POSITION: absolute; TOP: 2.037cm; HEIGHT: 16px" tabIndex=19 cols=25 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=名前フリガナのラベル 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 2.515cm; HEIGHT: 0.424cm">名前フリガナ:</SPAN><TEXTAREA class=MsoTextbox id=名前フリガナ style="LEFT: 2.804cm; WIDTH: 106px; POSITION: absolute; TOP: 2.515cm; HEIGHT: 16px" tabIndex=20 cols=25 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=敬称のラベル 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 2.99cm; HEIGHT: 0.424cm">敬称:</SPAN><TEXTAREA class=MsoTextbox id=敬称 style="LEFT: 2.804cm; WIDTH: 72px; POSITION: absolute; TOP: 2.99cm; HEIGHT: 16px" tabIndex=21 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=郵便番号のラベル 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 3.467cm; HEIGHT: 0.424cm">郵便番号:</SPAN><TEXTAREA class=MsoTextbox id=郵便番号 style="LEFT: 2.804cm; WIDTH: 72px; POSITION: absolute; TOP: 3.467cm; HEIGHT: 16px" tabIndex=22 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=都道府県のラベル 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 3.942cm; HEIGHT: 0.424cm">都道府県:</SPAN><TEXTAREA class=MsoTextbox id=都道府県 style="LEFT: 2.804cm; WIDTH: 72px; POSITION: absolute; TOP: 3.942cm; HEIGHT: 16px" tabIndex=23 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=住所１のラベル 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 4.42cm; HEIGHT: 0.424cm">住所１:</SPAN><TEXTAREA class=MsoTextbox id=住所１ style="LEFT: 2.804cm; WIDTH: 196px; POSITION: absolute; TOP: 4.42cm; HEIGHT: 16px" tabIndex=24 cols=19 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=住所２のラベル 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 4.895cm; HEIGHT: 0.424cm">住所２:</SPAN><TEXTAREA class=MsoTextbox id=住所２ style="LEFT: 2.804cm; WIDTH: 196px; POSITION: absolute; TOP: 4.895cm; HEIGHT: 16px" tabIndex=25 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=会社名のラベル 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 5.372cm; HEIGHT: 0.424cm">会社名:</SPAN><TEXTAREA class=MsoTextbox id=会社名 style="LEFT: 2.804cm; WIDTH: 196px; POSITION: absolute; TOP: 5.372cm; HEIGHT: 16px" tabIndex=26 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=会社名フリガナのラベル 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 5.847cm; HEIGHT: 0.424cm">会社名フリガナ:</SPAN><TEXTAREA class=MsoTextbox id=会社名フリガナ style="LEFT: 2.804cm; WIDTH: 196px; POSITION: absolute; TOP: 5.847cm; HEIGHT: 16px" tabIndex=27 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=部署のラベル 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 6.325cm; HEIGHT: 0.424cm">部署:</SPAN><TEXTAREA class=MsoTextbox id=部署 style="LEFT: 2.804cm; WIDTH: 196px; POSITION: absolute; TOP: 6.325cm; HEIGHT: 16px" tabIndex=28 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=役職のラベル 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 6.8cm; HEIGHT: 0.424cm">役職:</SPAN><TEXTAREA class=MsoTextbox id=役職 style="LEFT: 2.804cm; WIDTH: 196px; POSITION: absolute; TOP: 6.8cm; HEIGHT: 16px" tabIndex=29 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=電話のラベル 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 7.277cm; HEIGHT: 0.424cm">電話:</SPAN><TEXTAREA class=MsoTextbox id=電話 style="LEFT: 2.804cm; WIDTH: 106px; POSITION: absolute; TOP: 7.277cm; HEIGHT: 16px" tabIndex=30 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=FAXのラベル 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 7.752cm; HEIGHT: 0.424cm">FAX:</SPAN><TEXTAREA class=MsoTextbox id=FAX style="LEFT: 2.804cm; WIDTH: 106px; POSITION: absolute; TOP: 7.752cm; HEIGHT: 16px" tabIndex=31 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=携帯電話のラベル 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 8.23cm; HEIGHT: 0.424cm">携帯電話:</SPAN><TEXTAREA class=MsoTextbox id=携帯電話 style="LEFT: 2.804cm; WIDTH: 106px; POSITION: absolute; TOP: 8.23cm; HEIGHT: 16px" tabIndex=32 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=Webのラベル 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 8.705cm; HEIGHT: 0.424cm">Web:</SPAN><TEXTAREA class=MsoTextbox id=Web style="LEFT: 2.804cm; WIDTH: 196px; POSITION: absolute; TOP: 8.705cm; HEIGHT: 16px" tabIndex=33 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=電子メールのラベル 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 9.182cm; HEIGHT: 0.424cm">電子メール:</SPAN><TEXTAREA class=MsoTextbox id=電子メール style="LEFT: 2.804cm; WIDTH: 196px; POSITION: absolute; TOP: 9.182cm; HEIGHT: 16px" tabIndex=34 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=誕生日のラベル 
+style="LEFT: 8.997cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 0.053cm; HEIGHT: 0.424cm">誕生日:</SPAN><TEXTAREA class=MsoTextbox id=誕生日 style="LEFT: 11.801cm; WIDTH: 72px; POSITION: absolute; TOP: 0.053cm; HEIGHT: 16px" tabIndex=36 cols=11 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=郵便番号自宅のラベル 
+style="LEFT: 8.997cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 0.528cm; HEIGHT: 0.424cm">郵便番号自宅:</SPAN><TEXTAREA class=MsoTextbox id=郵便番号自宅 style="LEFT: 11.801cm; WIDTH: 72px; POSITION: absolute; TOP: 0.528cm; HEIGHT: 16px" tabIndex=37 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=都道府県自宅のラベル 
+style="LEFT: 8.997cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 1.006cm; HEIGHT: 0.424cm">都道府県自宅:</SPAN><TEXTAREA class=MsoTextbox id=都道府県自宅 style="LEFT: 11.801cm; WIDTH: 72px; POSITION: absolute; TOP: 1.006cm; HEIGHT: 16px" tabIndex=38 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=住所１自宅のラベル 
+style="LEFT: 8.997cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 1.481cm; HEIGHT: 0.424cm">住所１自宅:</SPAN><TEXTAREA class=MsoTextbox id=住所１自宅 style="LEFT: 11.801cm; WIDTH: 196px; POSITION: absolute; TOP: 1.481cm; HEIGHT: 16px" tabIndex=39 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=住所２自宅のラベル 
+style="LEFT: 8.997cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 1.958cm; HEIGHT: 0.424cm">住所２自宅:</SPAN><TEXTAREA class=MsoTextbox id=住所２自宅 style="LEFT: 11.801cm; WIDTH: 196px; POSITION: absolute; TOP: 1.958cm; HEIGHT: 16px" tabIndex=40 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=自宅電話のラベル 
+style="LEFT: 8.997cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 2.433cm; HEIGHT: 0.424cm">自宅電話:</SPAN><TEXTAREA class=MsoTextbox id=自宅電話 style="LEFT: 11.801cm; WIDTH: 106px; POSITION: absolute; TOP: 2.433cm; HEIGHT: 16px" tabIndex=41 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=自宅FAXのラベル 
+style="LEFT: 8.997cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 2.911cm; HEIGHT: 0.424cm">自宅FAX:</SPAN><TEXTAREA class=MsoTextbox id=自宅FAX style="LEFT: 11.801cm; WIDTH: 106px; POSITION: absolute; TOP: 2.911cm; HEIGHT: 16px" tabIndex=42 MsoTextAlign="General"></TEXTAREA><SPAN 
+class=MSTheme-Label id=備考のラベル 
+style="LEFT: 8.997cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 4.788cm; HEIGHT: 0.424cm">備考:</SPAN><TEXTAREA class=MsoTextbox id=備考 style="LEFT: 11.801cm; WIDTH: 196px; POSITION: absolute; TOP: 4.788cm; HEIGHT: 128px" tabIndex=48 rows=1 MsoTextAlign="General"></TEXTAREA><INPUT 
+id=挨拶状 
+style="LEFT: 11.801cm; WIDTH: 0.458cm; POSITION: absolute; TOP: 3.386cm; HEIGHT: 0.396cm" 
+tabIndex=45 type=checkbox><SPAN class=MSTheme-Label id=挨拶状のラベル 
+style="LEFT: 8.997cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 3.386cm; HEIGHT: 0.424cm">挨拶状</SPAN><INPUT 
+id=一時Check 
+style="LEFT: 11.801cm; WIDTH: 0.458cm; POSITION: absolute; TOP: 3.835cm; HEIGHT: 0.396cm" 
+tabIndex=46 type=checkbox><SPAN class=MSTheme-Label id=一時Checkのラベル 
+style="LEFT: 8.997cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 3.835cm; HEIGHT: 0.424cm">一時Check</SPAN><INPUT 
+id=Check 
+style="LEFT: 11.801cm; WIDTH: 0.458cm; POSITION: absolute; TOP: 4.288cm; HEIGHT: 0.396cm" 
+tabIndex=47 type=checkbox><SPAN class=MSTheme-Label id=Checkのラベル 
+style="LEFT: 8.997cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 4.288cm; HEIGHT: 0.424cm">Check</SPAN><SPAN 
+class=MSTheme-Label id=担当者のラベル 
+style="LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 9.657cm; HEIGHT: 0.37cm">担当者:</SPAN><SELECT 
+id=担当者 
+style="Z-INDEX: 2; LEFT: 2.804cm; WIDTH: 2.539cm; POSITION: absolute; TOP: 9.657cm; HEIGHT: 0.502cm" 
+tabIndex=35><OPTION selected></OPTION></SELECT><SPAN class=MSTheme-Label 
+id=ドロップダウンリスト0のラベル title=分類 
+style="Z-INDEX: 3; LEFT: 0.053cm; OVERFLOW: hidden; WIDTH: 2.751cm; POSITION: absolute; TOP: 0.528cm; HEIGHT: 0.37cm">分類</SPAN><SELECT 
+id=分類 
+style="Z-INDEX: 4; LEFT: 2.804cm; WIDTH: 2.54cm; POSITION: absolute; TOP: 0.528cm; HEIGHT: 0.502cm" 
+tabIndex=16></SELECT></DIV>
+<DIV class=Mso2dSectionBanner id=ナビゲーションqry顧客情報デタアクセスBanner 
+style="MARGIN-LEFT: 0px; WIDTH: 17.488cm" tabIndex=-1><SPAN 
+id=ナビゲーションqry顧客情報デタアクセスBannerCaption>ナビゲーション: qry顧客情報データアクセス</SPAN></DIV>
+<DIV class=Mso2dSection id=ナビゲーションqry顧客情報デタアクセス 
+style="VISIBILITY: inherit; MARGIN-LEFT: 0px; WIDTH: 17.488cm; HEIGHT: 0.846cm; BACKGROUND-COLOR: gainsboro">
+<TABLE class=MsoNavContainer id=qryデータアクセス移動 
+style="LEFT: 4px; WIDTH: 568px; POSITION: absolute; TOP: 4px; HEIGHT: 18px" 
+cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class=MsoNavButton style="WIDTH: 20px; HEIGHT: 20px"><IMG 
+      class=MsoNavFirst id=qry顧客情報データアクセスNavFirst tabIndex=1 height=20 
+      src="owc://GIF/#11200" width=20></TD>
+    <TD class=MsoNavButton style="WIDTH: 20px; HEIGHT: 20px"><IMG 
+      class=MsoNavPrevious id=qry顧客情報データアクセスNavPrevious tabIndex=2 height=20 
+      src="owc://GIF/#11202" width=20></TD>
+    <TD style="VERTICAL-ALIGN: middle; WIDTH: 100%; TEXT-ALIGN: center" 
+      noWrap><SPAN class=MsoNavRecordsetLabel id=qry顧客情報データアクセスNavLabel 
+      style="VISIBILITY: hidden" tabIndex=3>qry顧客情報データアクセス |0/|2</SPAN></TD>
+    <TD class=MsoNavButton style="WIDTH: 20px; HEIGHT: 20px"><IMG 
+      class=MsoNavNext id=qry顧客情報データアクセスNavNext tabIndex=4 height=20 
+      src="owc://GIF/#11204" width=20></TD>
+    <TD class=MsoNavButton style="WIDTH: 20px; HEIGHT: 20px"><IMG 
+      class=MsoNavLast id=qry顧客情報データアクセスNavLast tabIndex=5 height=20 
+      src="owc://GIF/#11206" width=20></TD>
+    <TD class=MsoNavButton style="WIDTH: 20px; HEIGHT: 20px"><IMG 
+      class=MsoNavAddNew id=qry顧客情報データアクセスNavNew tabIndex=6 height=20 
+      src="owc://GIF/#11208" width=20></TD>
+    <TD class=MsoNavButton style="WIDTH: 20px; HEIGHT: 20px"><IMG 
+      class=MsoNavDelete id=qry顧客情報データアクセスNavDelete tabIndex=7 height=20 
+      src="owc://GIF/#11210" width=20></TD>
+    <TD class=MsoNavButton style="WIDTH: 20px; HEIGHT: 20px"><IMG 
+      class=MsoNavSave id=qry顧客情報データアクセスNavSave tabIndex=8 height=20 
+      src="owc://GIF/#11214" width=20></TD>
+    <TD class=MsoNavButton style="WIDTH: 20px; HEIGHT: 20px"><IMG 
+      class=MsoNavUndo id=qry顧客情報データアクセスNavUndo tabIndex=9 height=20 
+      src="owc://GIF/#11212" width=20></TD>
+    <TD class=MsoNavButton style="WIDTH: 20px; HEIGHT: 20px"><IMG 
+      class=MsoNavSortAsc id=qry顧客情報データアクセスNavSortAscending tabIndex=10 
+      height=20 src="owc://GIF/#11216" width=20></TD>
+    <TD class=MsoNavButton style="WIDTH: 20px; HEIGHT: 20px"><IMG 
+      class=MsoNavSortDesc id=qry顧客情報データアクセスNavSortDescending tabIndex=11 
+      height=20 src="owc://GIF/#11218" width=20></TD>
+    <TD class=MsoNavButton style="WIDTH: 20px; HEIGHT: 20px"><IMG 
+      class=MsoNavFilter id=qry顧客情報データアクセスNavFilterBySelection tabIndex=12 
+      height=20 src="owc://GIF/#11220" width=20></TD>
+    <TD class=MsoNavButton style="WIDTH: 20px; HEIGHT: 20px"><IMG 
+      class=MsoNavToggleFilter id=qry顧客情報データアクセスNavFilterToggle tabIndex=13 
+      height=20 src="owc://GIF/#11222" width=20></TD>
+    <TD class=MsoNavButton style="WIDTH: 20px; HEIGHT: 20px"><IMG 
+      class=MsoNavHelp id=qry顧客情報データアクセスNavHelp tabIndex=14 height=20 
+      src="owc://GIF/#11224" width=20></TD></TR></TBODY></TABLE></DIV>
+<P>&nbsp;</P></BODY></HTML>
